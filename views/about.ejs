@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document | <%= title %></title>  </head>
+    <%- include('./partials/head.ejs')  %>
   <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Stotka</h1></a>
-        <p>A net Stotka</p>
-        <ul>
-          <li><a href="/">Blogs</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/blogs/create">New Blogs</a></li>
-        </ul>
-      </div>
-    </nav>
+    <%- include('./partials/nav.ejs')  %>
+
     <div class="about content">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
@@ -23,5 +11,7 @@
         distinctio?
       </p>
     </div>
+    <%- include('./partials/footer.ejs')  %>
+
   </body>
 </html>
