@@ -2,8 +2,14 @@ const express = require("express")
 
 const morgan = require('morgan')
 
+const mongoose = require("mongoose")
 
 const app = express()
+const dbURI = "mongodb+srv://stotka123:stotka1234@cluster0.ip2tn9i.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(dbURI)
+.then((result) => console.log("connect to database") )
+.catch((err) => console.log(err))
 
 app.set('view engine', 'ejs')
 
